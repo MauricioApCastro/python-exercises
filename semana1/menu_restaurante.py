@@ -1,9 +1,42 @@
-print("1 - Hambúrguer (R$ 15,00)")
-print("2 - Pizza (R$ 20,00)")
-print("3 - Refrigerante (R$ 5,00)")
-print("4 - Suco (R$ 7,00)")
+opcao = 0
 
-opcao = int(input("Escolha uma opção (1-4): "))
+while opcao != 5:
+    print("Menu do Restaurante:")
+    print("1 - Hambúrguer (R$ 15,00)")
+    print("2 - Pizza (R$ 20,00)")
+    print("3 - Refrigerante (R$ 5,00)")
+    print("4 - Suco (R$ 7,00)")
+    print("5 - Sair")
+    print("")
+    opcao = int(input("Escolha uma opção: (1 a 5) "))
+
+    if opcao == 1:
+        print("Você escolheu Hambúrguer. Preço: R$ 15,00")
+    elif opcao == 2:
+        print("Você escolheu Pizza. Preço: R$ 20,00")
+    elif opcao == 3:
+        print("Você escolheu Refrigerante. Preço: R$ 5,00")
+    elif opcao == 4:
+        print("Você escolheu Suco. Preço: R$ 7,00")
+    else :
+        print("Saindo do menu. Obrigado!")
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if opcao == 1:
     print("Você escolheu Hambúrguer. Preço: R$ 15,00")
 elif opcao == 2:

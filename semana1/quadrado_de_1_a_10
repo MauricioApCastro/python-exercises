@@ -1,0 +1,14 @@
+quadrados_numeros = []
+
+for i in range(1,11):
+    quadrado_numero = i*i
+    quadrados_numeros.append(quadrado_numero)
+    print(f"{i}² = {quadrado_numero}")
+
+    
+    
+
+
+
+
+

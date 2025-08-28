@@ -2,7 +2,7 @@ notas_alunos = []
 soma = 0
 
 for i in range(5):
-    nota_aluno = float(input("Digite a nota {1}"))
+    nota_aluno = float(input("Digite a nota {i}"))
     notas_alunos.append(nota_aluno)
 
 for nota_aluno in notas_alunos:

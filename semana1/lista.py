@@ -1,25 +1,13 @@
 lista_numeros = []
 
-for i in range(1,6):
-    nomes = int(input("Digite um número: "))
-    lista_numeros.append(nomes)
+for i in range(1, 6):
+    numero = int(input("Digite um número: "))
+    lista_numeros.append(numero)
 
-
-maior = lista_numeros[0]
-menor = lista_numeros[0]
-
-for numero in lista_numeros:
-    if numero > maior:
-        maior = numero
-
-for numero in lista_numeros:
-    if numero < menor:
-        menor = numero
-        
-soma = 0
-for numero in lista_numeros:
-    soma = soma + numero
+maior = max(lista_numeros)   # maior valor da lista
+menor = min(lista_numeros)   # menor valor da lista
+soma = sum(lista_numeros)    # soma de todos os valores
 
 print(lista_numeros)
 print(f"O menor é {menor} e o maior é {maior}")
-print(f"A soma de todos os número é {soma}")
+print(f"A soma de todos os números é {soma}")

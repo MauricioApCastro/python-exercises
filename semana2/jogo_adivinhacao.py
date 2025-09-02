@@ -1,8 +1,8 @@
 numero_secreto = 5
-palpite = 1
 lista_palpites = []
+tentativas = 0
 
-while numero_secreto != palpite:
+while True:
     palpite = int(input("Adivinhe o número!: "))
 
     lista_palpites.append(palpite)
@@ -13,9 +13,11 @@ while numero_secreto != palpite:
     elif palpite > numero_secreto:
         print("Muito alto")
     else:
-        print("Parabéns você acertou!")
+        print(f"Parabéns, você acertou o número secreto {numero_secreto}!")
+        break
+    tentativas += 1
 
 tentativas = len(lista_palpites)
 
-print(f"Tentativas: {tentativas}")
-print(f"Números tentados: {lista_palpites}")
+print(f"Você precisou de {tentativas} tentativas")
+print(f"Seus palpites foram: {lista_palpites}")

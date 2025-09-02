@@ -17,7 +17,7 @@ while True:
         break
     tentativas += 1
 
-tentativas = len(lista_palpites)
+
 
 print(f"Você precisou de {tentativas} tentativas")
 print(f"Seus palpites foram: {lista_palpites}")

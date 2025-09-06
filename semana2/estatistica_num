@@ -1,0 +1,34 @@
+lista_numeros = []
+i = 1
+
+while i <= 10:
+    try:
+        numero = int(input(f"Digite o {i}º número positivo: "))
+        if numero > 0:
+            lista_numeros.append(numero)
+            i -= 1
+        else:
+            print("⚠️ Digite um número maior que zero!")
+    except ValueError:
+        print("⚠️ Entrada inválida! Digite apenas números inteiros.")
+
+pares = [n for n in lista_numeros if n % 2 == 0]
+impares = [n for n in lista_numeros if n % 2 != 0]
+quadrados = [n**2 for n in lista_numeros]
+maiores_que_cinco = [n for n in lista_numeros if n > 5]
+
+print(f"\n✅ Lista completa: {lista_numeros}")
+print(f"📊 Lista de pares: {pares}")
+print(f"📊 Lista de ímpares: {impares}")
+print(f"📊 Quadrados: {quadrados}")
+print(f"📊 Maiores que 5: {maiores_que_cinco}")
+
+                
+          
+               
+
+
+            
+     
+
+

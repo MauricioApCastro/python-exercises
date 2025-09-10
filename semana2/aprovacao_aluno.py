@@ -21,8 +21,8 @@ def aprovacao(media):
         return "reprovado"
 
 def par_impar(lista):   
-        pares = [n for n in lista_notas if n % 2 == 0]
-        impares = [n for n in lista_notas if n % 2 != 0]
+        pares = [n for n in lista if n % 2 == 0]
+        impares = [n for n in lista if n % 2 != 0]
         return pares, impares
      
 

@@ -1,4 +1,3 @@
-
 import os
 import platform
 
@@ -25,7 +24,7 @@ def cadastrar_aluno():
     cidade = input("Digite sua cidade: ")
     
 
-    aluno = {"nome": nome, "idade": idade, "cidade": cidade}
+    aluno = {"nome": nome, "idade": idade, "cidade": cidade, "notas": []}
     lista_cadastro.append(aluno)
     print("\n✅ Pessoa cadastrada com sucesso!")
     input("\nPressione ENTER para continuar...")
@@ -50,13 +49,14 @@ while True:
         if escolha == 1:
            cadastrar_aluno()
         elif escolha == 2:
-            print("mostrar_cadastros()")
+            nome_busca = "Escolha o aluno para cadastrar notas:"
+            #"cadastrar_notas()
         elif escolha == 3:
             nome_procurado = input("Busca por nome: ").strip()
-            print()
+            #Ver alunos e médias
         elif escolha == 4:
             nome_procurado = input("Nome para excluir: ")
-            print()
+            #Buscar aluno
         elif escolha == 5:
             print("\nSaindo...")
             break

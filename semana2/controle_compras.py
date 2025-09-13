@@ -29,3 +29,4 @@ print(f"\nVocê cadastrou {qtde_produtos} produtos")
 print(f"O total gasto foi R${total:.2f}")
 print(f"A média de gasto foi R${media:.2f}")
 print(f"O produto mais caro custa R${caro:.2f} e o mais barato custa R${barato:.2f}")
+    
